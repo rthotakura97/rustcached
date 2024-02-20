@@ -21,4 +21,3 @@ Implementation of a distributed key-value store, similar to AWS DynamoDB, Redis,
 * Sharding/Partitioning Strategy
     * Data will be partitioned by a keyspace using a identifying partition key
     * Consistent hashing to map nodes to a keyspace
-
