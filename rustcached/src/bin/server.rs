@@ -1,5 +1,5 @@
-use std::net::{TcpListener, TcpStream};
 use std::io::prelude::*;
+use std::net::{TcpListener, TcpStream};
 
 fn handle_connection(mut stream: TcpStream) {
     let response = "Hello from server";
@@ -16,7 +16,7 @@ fn main() -> std::io::Result<()> {
     for stream in listener.incoming() {
         let stream = stream?;
         println!("Connection established!");
-        
+
         handle_connection(stream);
     }
 
